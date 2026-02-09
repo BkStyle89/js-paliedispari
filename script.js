@@ -37,4 +37,6 @@ for(let i=word.length - 1 ; i>=0; i--){
 return reversed_word
 }
 
-
+const reversed_word = getReversedWord(random_word)
+/* console.log(getReversedWord('')) */
+console.log(reversed_word)
