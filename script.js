@@ -47,6 +47,32 @@ console.log(reversed_word)
 
 // odd even pc player
 
-let player = prompt('scegli un numero da 1 a 5')
+let player = Number(prompt('scegli un numero da 1 a 5'))
 let computer = Math.floor(Math.random() *5) + 1;
 console.log(player,computer)
+
+function sum(player, computer){
+    const result = player + computer;
+    return result
+}
+const total = sum(player,computer);
+console.log(total)
+
+if (total)
+
+
+
+
+
+/* 
+
+example
+function sum (x,y) {
+    const result = x + y;
+    return result
+}
+const numX = 22;
+const numY = 10;
+
+const total = sum (numX,numY);
+console.log(total) */
