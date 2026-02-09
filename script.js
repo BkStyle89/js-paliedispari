@@ -24,4 +24,8 @@ Se sì, di che tipo? */
 //promt ask word
 //controlla il tipo di parola
 
+let random_word = prompt('inserisci una parola')
+
+function getReversedWord(word){
+    let reversed_word = ''
 
