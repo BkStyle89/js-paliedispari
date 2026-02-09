@@ -28,4 +28,13 @@ let random_word = prompt('inserisci una parola')
 
 function getReversedWord(word){
     let reversed_word = ''
+for(let i=word.length - 1 ; i>=0; i--){
+    const type = word[i]
+    reversed_word += type
+}
+
+/* console.log(reversed_word) */
+return reversed_word
+}
+
 
