@@ -49,34 +49,31 @@ console.log(reversed_word)
 
 // odd even pc player
 
+let pari_dispari = prompt('scegli pari o dispari')
 let player = Number(prompt('scegli un numero da 1 a 5'))
 let computer = Math.floor(Math.random() *5) + 1;
 console.log(player,computer)
 
-if (player > computer){
-    console.log('ha vinto il giocatore')
-}
-else if (player < computer)
-{
-    console.log('ha vinto il computer')
-}
-else{
-    console.log('pareggio')
-}
-
-function sum(player, computer)
-{
-    const result = player + computer;
-    return result
+function sum(player, computer){
+return player + computer
 }
     const total = sum(player,computer);
     console.log(total)
+let risultato;
 
 if (total%2==0){
+    risultato = 'pari';
     console.log( 'il risultato è pari')
 }  
 else{
+    risultato = 'dispari'
     console.log('il risultato è dispari')
+}
+if ( pari_dispari == risultato){
+    console.log('hai vinto')
+}
+else{
+    console.log('hai perso')
 }
 
 
