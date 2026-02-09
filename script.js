@@ -45,4 +45,8 @@ const reversed_word = getReversedWord(random_word)
 /* console.log(getReversedWord('')) */
 console.log(reversed_word)
 
+// odd even pc player
 
+let player = prompt('scegli un numero da 1 a 5')
+let computer = Math.floor(Math.random() *5) + 1;
+console.log(player,computer)
