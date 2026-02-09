@@ -58,7 +58,11 @@ function sum(player, computer){
 const total = sum(player,computer);
 console.log(total)
 
-if (total)
+if (total%2==0){
+    console.log( 'il risultato è pari')
+}   else{
+    console.log('il risultato è dispari')
+}
 
 
 
