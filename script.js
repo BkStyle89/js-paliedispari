@@ -30,10 +30,12 @@ function getReversedWord(word){
     let reversed_word = ''
 for(let i=word.length - 1 ; i>=0; i--){
     const type = word[i]
-    reversed_word += type
-} if (reversed_word == random_word){
+        reversed_word += type
+} 
+if  (reversed_word == random_word){
     console.log('è un palindromo')
-} else {
+} 
+else {
     console.log('non è un palindromo')
 }
 
@@ -51,18 +53,32 @@ let player = Number(prompt('scegli un numero da 1 a 5'))
 let computer = Math.floor(Math.random() *5) + 1;
 console.log(player,computer)
 
-function sum(player, computer){
+if (player > computer){
+    console.log('ha vinto il giocatore')
+}
+else if (player < computer)
+{
+    console.log('ha vinto il computer')
+}
+else{
+    console.log('pareggio')
+}
+
+function sum(player, computer)
+{
     const result = player + computer;
     return result
 }
-const total = sum(player,computer);
-console.log(total)
+    const total = sum(player,computer);
+    console.log(total)
 
 if (total%2==0){
     console.log( 'il risultato è pari')
-}   else{
+}  
+else{
     console.log('il risultato è dispari')
 }
+
 
 
 
