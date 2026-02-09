@@ -31,6 +31,10 @@ function getReversedWord(word){
 for(let i=word.length - 1 ; i>=0; i--){
     const type = word[i]
     reversed_word += type
+} if (reversed_word == random_word){
+    console.log('è un palindromo')
+} else {
+    console.log('non è un palindromo')
 }
 
 /* console.log(reversed_word) */
@@ -40,3 +44,5 @@ return reversed_word
 const reversed_word = getReversedWord(random_word)
 /* console.log(getReversedWord('')) */
 console.log(reversed_word)
+
+
